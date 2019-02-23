@@ -10,3 +10,9 @@ entende....'''
 print(s1)
 print(s2)
 print(s3)
+
+#conrtando strings
+
+c1 = s1[5:20]
+
+print('Cortando o texto = ',c1)
