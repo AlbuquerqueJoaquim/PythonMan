@@ -1,5 +1,5 @@
 
-from math import  pi, e
+from math import  pi, e #importando funçoes do modulo math
 
 def func():
     from math import factorial
