@@ -1,4 +1,7 @@
 
+#Variaveis privadas
+
+
 #variaveis declaradas com underline(_)
 # são variaveis privadas pertecentes
 # aquela classe ou arquvio python impossibilitando
