@@ -1,13 +1,20 @@
 
-# traalhando com varias excepts em um try
+# tralhando com varias excepts em um try
+#capturando a instancia do erro
 
-def(erro):
+def erro(x):
     try:
         eval(x)
-    except TypeError:
+    except TypeError as e:
         print("TypeError")
-    except NameError:
+        print(type(e))# instancia de exceção
+        print(e.args)#argumentos as mensagens
+        print(e)# __str__mensagem
+    except NameError as e:
         print("NameError")
+        print(type(e))# instancia de exceção
+        print(e.args)#argumentos as mensagens
+        print(e)# __str__mensagem
     except ValueError:
         print("ValueError")
     except ZeroDivisionError:
