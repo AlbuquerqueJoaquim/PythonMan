@@ -6,7 +6,7 @@ from kivy.app import App
 from kivy.uix.button import Button
 
 def click():
-    print("O Boao foi clicado!")
+    print("O Botao foi clicado!")
 
 def build():
     bt = Button(text="Clique aqui!")
