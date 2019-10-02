@@ -11,12 +11,12 @@ class Tela1(BoxLayout):
 
     def on_press_bt(self):
         janela.root_window.remove_widget(janela.root)
-        janela.root_window.remove_widget(Tela2())
+        janela.root_window.add_widget(Tela2())
 
     def __init__(self, **kwargs):
         super(Tela1, self).__init__(**kwargs)
-        self.orientation = 'vertical'
-        bt1 = Button(text='Clique aqui !')
+        self.orientation = "vertical"
+        bt1 = Button(text="Clique aqui !")
         bt1.on_press = self.on_press_bt
         self.add_widget(bt1)
         self.add_widget(Button(text="bt2"))
@@ -27,19 +27,19 @@ class Tela2(BoxLayout):
     def on_press_bt(self):
 
         janela.root_window.remove_widget(janela.root)
-        janela.root_window.remove_widget(Tela1())
+        janela.root_window.add_widget(Tela1())
 
     def __init__(self, **kwargs):
         super(Tela2, self).__init__(**kwargs)
-        super.orientation = "vertical"
+        self.orientation = "vertical"
         bt = Button(text="Clique aqui!!")
         bt.on_press = self.on_press_bt
-        self.padding(bt)
+        self.add_widget(bt)
 
 
 class buttons(App):
     def build(self):
-        return Button(text='ok')
+        return Tela1()
 
 janela = buttons()
 janela.run()
