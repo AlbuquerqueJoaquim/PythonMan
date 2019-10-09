@@ -40,9 +40,9 @@ class Tela2(BoxLayout):
   #      self.add_widget(bt)
 
 
-class kvxpython2(App):
+class kivy(App):
     def build(self):
         return Tela1()
 
-janela = kvxpython2()
+janela = kivy()
 janela.run()
