@@ -1,0 +1,20 @@
+
+
+<MinhaTela@BoxLayout>:
+    orientation: "vertical"
+
+    Button:
+        text: "OK"
+        #invocando a funcao click
+        on_press: root.click()
+
+    Label:
+        text: "Label 1"
+        #criando nome para os label para ser acessado na funcao click
+        id: lb1
+
+    Label:
+        text: "Label 2"
+        id: lb2
+
+MinhaTela:
