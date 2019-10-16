@@ -1,0 +1,22 @@
+
+
+<MinhaTela@BoxLayout>:
+    orientation: "vertical"
+
+    Button:
+        text: "self"
+        #self aponta para o componente
+        on_press: self.funcSelf()
+
+    Button:
+        text: "root"
+        #root estara apontando para a classe q estamos implementando
+        on_press: root.funcRoot()
+
+
+    Button:
+        text: "app"
+        #aponta para a classe principal da aplicaçao
+        on_press: app.funcApp()
+
+MinhaTela:
