@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/modulo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SimbolosPrivados" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SimbolosPublicos" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ModuloPrincipal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RecarregaentoModulo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LocalizacaoDeModulo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LPOO" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Kivy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Kivy/Hello Word" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/kvlang" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/kvlang/Propriedade deMedida" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/kivy-master/examples/demo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/kivy-master" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/kivy-designer-master" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.6 (joaquimpc)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>
