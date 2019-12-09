@@ -22,6 +22,7 @@ conexao = pymysql.connect (
 
 #trabalhando de forma elegante
 
+y = 'drop table cidade'
 x = 'create table cidade(idcidade int,nome varchar(20));'
 
 with conexao.cursor() as cursor:
