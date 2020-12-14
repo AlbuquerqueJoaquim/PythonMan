@@ -39,3 +39,23 @@ class DataBase():
         query = QtSql.QSqlQuery()
         query.exec_("update clientes set nome='{cliente['nome']}','{cliente['telefone']}','{cliente['celular']}','{cliente['endereco']}' where idclientes={cliente['idclientes']}")
 
+
+    def listarFornecedor(self):
+        model = QtSql.QSqlQueryModel()
+        model.setQuery('select idfornecedores, nome,telefone,celular, endereco from fornecedores'
+                       'order by nome')
+        model.setHeaderData(0, QtCore.Qt.Horizontal, "Código")
+        model.setHeaderData(1, QtCore.Qt.Horizontal, "Nome")
+        model.setHeaderData(2, QtCore.Qt.Horizontal, "Telefone")
+        model.setHeaderData(3, QtCore.Qt.Horizontal, "Celular")
+        model.setHeaderData(4, QtCore.Qt.Horizontal, "Endereco")
+        return model
+
+    def inserirFornecedor(self):
+        query = QtSql.QSqlQuery()
+        query.exec_(f"insert into fornecedores (nome, telefone, celular, endereco) values('{fornecedor['nome']}', '{fornecedor['telefone']}', '{fornecedor['celular']}', '{fornecedor['endereco']}')")
+
+
+    def alterarFornecedor(self):
+        query = QtSql.QSqlQuery()
+        query.exec_(f"update fornecedores set nome='{fornecedor['nome']}', telefone='{fornecedor['telefone']}', celular='{fornecedor['celular']}', endereco='{fornecedor['endereco']}' where idfornecedores={fornecedor['idfornecedores']}")
