@@ -53,9 +53,9 @@ class DataBase():
 
     def inserirFornecedor(self):
         query = QtSql.QSqlQuery()
-        query.exec_(f"insert into fornecedores (nome, telefone, celular, endereco) values('{fornecedor['nome']}', '{fornecedor['telefone']}', '{fornecedor['celular']}', '{fornecedor['endereco']}')")
+        query.exec_(f"insert into fornecedores (nome, telefone, celular, endereco) values('{fornecedores['nome']}', '{fornecedor['telefone']}', '{fornecedores['celular']}', '{fornecedores['endereco']}')")
 
 
     def alterarFornecedor(self):
         query = QtSql.QSqlQuery()
-        query.exec_(f"update fornecedores set nome='{fornecedor['nome']}', telefone='{fornecedor['telefone']}', celular='{fornecedor['celular']}', endereco='{fornecedor['endereco']}' where idfornecedores={fornecedor['idfornecedores']}")
+        query.exec_(f"update fornecedores set nome='{fornecedores['nome']}', telefone='{fornecedores['telefone']}', celular='{fornecedores['celular']}', endereco='{fornecedores['endereco']}' where idfornecedores={fornecedores['idfornecedores']}")
