@@ -8,7 +8,7 @@ conexao = pymysql.connect (
 
     host='localhost',
     user='admin',
-    password='Jojo*21021990',
+    password='*********',
     db='DBI',
     cursorclass = pymysql.cursors.DictCursor
 
